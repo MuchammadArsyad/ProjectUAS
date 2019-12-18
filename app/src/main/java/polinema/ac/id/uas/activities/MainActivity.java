@@ -1,8 +1,10 @@
-package polinema.ac.id.uas;
+package polinema.ac.id.uas.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import polinema.ac.id.uas.R;
 
 public class MainActivity extends AppCompatActivity {
 
