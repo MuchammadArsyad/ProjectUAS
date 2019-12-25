@@ -6,20 +6,20 @@ import android.os.Handler;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import polinema.ac.id.uas.R;
+import polinema.ac.id.androiduistarter.R;
 
 public class SplashActivity extends AppCompatActivity {
 
     @Override
-    protected void onCreate (Bundle savedInstanceState) {
-        super.onCreate((savedInstanceState));
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
-        new Handler().postDelayed(new Runnable()) {
+        new Handler().postDelayed(new Runnable() {
             @Override
-            public void run() (
-                startActivity(new Intent(SplashActivity.this,WelcomeActivity.class));
+            public void run() {
+                startActivity(new Intent(SplashActivity.this, WelcomeActivity.class));
                 finish();
-            )
-        },2000;
+            }
+        }, 2000 );
     }
 }
