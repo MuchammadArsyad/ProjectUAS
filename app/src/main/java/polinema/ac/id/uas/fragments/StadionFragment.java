@@ -15,12 +15,13 @@ import polinema.ac.id.uas.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class JadwalFragment extends Fragment {
-    TextView jadwal;
+public class StadionFragment extends Fragment {
+    TextView stadion;
     Button senin, rabu;
 
 
-    public JadwalFragment() {
+
+    public StadionFragment() {
         // Required empty public constructor
     }
 
@@ -29,33 +30,27 @@ public class JadwalFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_jadwal, container, false);
-        jadwal= view.findViewById(R.id.textView);
+        stadion= view.findViewById(R.id.textView);
         senin = view.findViewById(R.id.button);
         rabu = view.findViewById(R.id.button2);
         // Inflate the layout for this fragment
         senin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                 jadwal.setText("Indonesia vs Malaysia");
+                stadion.setText("Stdaion Gelora Bung Karno");
             }
 
         });
         rabu.setOnClickListener(new View.OnClickListener() {
-                                      @Override
-                                      public void onClick(View view) {
-                                          jadwal.setText("Thailand vs indonesia");
-                                      }
+            @Override
+            public void onClick(View view) {
+                stadion.setText("Stadion Batakan");
+            }
         });
 
         return view;
+        // Inflate the layout for this fragment
 
     }
 
-//    public void buttonOnClick(View view) {
-//       jadwal.setText("Indonesia vs Malaysia");
-//    }
-//
-//    public void test(View view) {
-//        jadwal.setText("Indonesia vs Malaysia");
-//    }
 }
